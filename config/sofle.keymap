@@ -56,11 +56,11 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &kp HOME       &kp F6                &kp F7                 &kp F8          &kp F9            &kp F10  &kp F11
-&trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &kp END        &kp KP_DIVIDE         &kp KP_MULTIPLY        &kp KP_MINUS    &kp KP_PLUS       &trans   &kp F12
-&trans      &kp TILDE        &trans          &trans           &trans           &mkp MB5           &kp PAGE_UP    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE   &trans   &trans
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &kp PAGE_DOWN  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN   &kp GREATER_THAN  &trans   &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK      &trans                &trans                 &trans          &trans            &trans
+&kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &kp HOME       &kp F6                &kp F7                 &kp F8          &kp F9            &kp F10          &kp F11
+&trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &kp END        &kp KP_DIVIDE         &kp KP_MULTIPLY        &kp KP_MINUS    &kp KP_PLUS       &kp PRINTSCREEN  &kp F12
+&trans      &kp TILDE        &trans          &trans           &trans           &mkp MB5           &kp PAGE_UP    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp INSERT       &trans
+&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &kp PAGE_DOWN  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN   &kp GREATER_THAN  &trans           &trans
+&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &kp LS(LG(S))  &trans                &trans                 &trans          &trans            &trans
             >;
 
             display-name = "layer1";
