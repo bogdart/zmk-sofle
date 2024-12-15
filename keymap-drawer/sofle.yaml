@@ -88,8 +88,8 @@ layers:
   - END
   - '{'
   - '}'
-  - '"'
-  - {t: '''', s: '"'}
+  - Ins
+  - {t: '$$mdi:transfer$$', type: trans}
   - PRINTSCREEN
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
@@ -101,9 +101,9 @@ layers:
   - PgUp
   - (
   - )
-  - '{'
-  - '}'
-  - Ins
+  - '"'
+  - {t: '''', s: '"'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -121,13 +121,13 @@ layers:
   - MUTE
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - CLCK
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '2', h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:keyboard-space$$
+  - CLCK
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   '2':
