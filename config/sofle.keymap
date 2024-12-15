@@ -56,11 +56,11 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE   &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp HOME       &kp F6                &kp F7                 &kp F8             &kp F9            &kp F10          &kp F11
-&trans      &trans  &trans  &trans  &trans  &trans    &kp END        &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp PRINTSCREEN  &kp F12
-&trans      &trans  &trans  &trans  &trans  &trans    &kp PAGE_UP    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE     &kp RIGHT_BRACE   &kp INSERT       &trans
-&trans      &trans  &trans  &trans  &trans  &trans    &kp PAGE_DOWN  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN      &kp GREATER_THAN  &kp BACKSLASH    &trans
-&kp K_MUTE  &trans  &trans  &trans  &trans  &trans    &to 2          &trans                &trans                 &trans             &trans            &trans
+&kp GRAVE   &kp F1  &kp F2  &kp F3    &kp F4  &kp F5    &kp HOME       &kp F6                &kp F7                 &kp F8             &kp F9            &kp F10          &kp F11
+&trans      &trans  &trans  &trans    &trans  &trans    &kp END        &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp INSERT         &trans            &kp PRINTSCREEN  &kp F12
+&trans      &trans  &trans  &trans    &trans  &trans    &kp PAGE_UP    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &trans           &trans
+&trans      &trans  &trans  &trans    &trans  &trans    &kp PAGE_DOWN  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN      &kp GREATER_THAN  &kp BACKSLASH    &trans
+&kp K_MUTE  &trans  &trans  &kp CLCK  &trans  &trans    &to 2          &trans                &kp SPACE              &kp CLCK           &trans            &trans
             >;
 
             display-name = "layer1";
