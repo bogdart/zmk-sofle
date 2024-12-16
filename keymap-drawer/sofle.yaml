@@ -53,17 +53,17 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '`', s: '~'}
-  - Gui+Sft+ S
+  - Gui+Sft+S
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-tab$$
   - $$mdi:apple-keyboard-shift$$
   - layer1
   - {t: '$$mdi:backspace$$', type: backspace}
-  - Gui+ $$mdi:keyboard-space$$
+  - Gui+$$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-shift$$
-  - RGUI
+  - $$mdi:apple-keyboard-command$$
   - $$mdi:backspace-reverse-outline$$
   layer1:
   - {t: '`', s: '~'}
