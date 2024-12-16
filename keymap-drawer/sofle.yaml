@@ -121,13 +121,13 @@ layers:
   - MUTE
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - CLCK
+  - $$mdi:apple-keyboard-caps$$
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '2', h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-space$$
-  - CLCK
+  - $$mdi:apple-keyboard-caps$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   '2':
