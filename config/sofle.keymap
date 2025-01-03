@@ -4,6 +4,9 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
@@ -42,9 +45,18 @@
         compatible = "zmk,behavior-sensor-rotate-var";
         label = "SCROLLMS";
         #sensor-binding-cells = <2>;
-        bindings = <&kp>, <&kp>;
+        bindings = <&alttab>, <&alttab>;
 
-        tap-ms = <600>;
+        tap-ms = <30>;
+    };
+
+    macros {
+        alttab: alttab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(TAB) &sk LEFT_ALT>;
+            label = "ALTTAB";
+        };
     };
 
     keymap {
@@ -52,14 +64,14 @@
 
         layer0 {
             bindings = <
-&kp ESC            &kp N1        &kp N2   &kp N3          &kp N4  &kp N5           &kp UP_ARROW     &kp N6     &kp N7     &kp N8           &kp N9     &kp N0      &kp MINUS
-&kp LEFT_BRACKET   &kp Q         &kp W    &kp E           &kp R   &kp T            &kp DOWN_ARROW   &kp Y      &kp U      &kp I            &kp O      &kp P       &kp EQUAL
-&kp RIGHT_BRACKET  &kp A         &kp S    &kp D           &kp F   &kp G            &kp LEFT_ARROW   &kp H      &kp J      &kp K            &kp L      &kp SEMI    &kp APOS
-&kp LEFT_CONTROL   &kp Z         &kp X    &kp C           &kp V   &kp B            &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA        &kp DOT    &kp FSLH    &kp GRAVE
+&kp ESC            &kp N1        &kp N2   &kp N3          &kp N4  &kp N5           &kp UP_ARROW     &kp N6     &kp N7     &kp N8           &kp N9        &kp N0      &kp MINUS
+&kp LEFT_BRACKET   &kp Q         &kp W    &kp E           &kp R   &kp T            &kp DOWN_ARROW   &kp Y      &kp U      &kp I            &kp O         &kp P       &kp EQUAL
+&kp RIGHT_BRACKET  &kp A         &kp S    &kp D           &kp F   &kp G            &kp LEFT_ARROW   &kp H      &kp J      &kp K            &kp L         &kp SEMI    &kp APOS
+&kp LEFT_CONTROL   &kp Z         &kp X    &kp C           &kp V   &kp B            &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA        &kp DOT       &kp FSLH    &kp GRAVE
 &kp LG(LS(S))      &kp LEFT_ALT  &kp TAB  &kp LEFT_SHIFT  &mo 1   &kp BACKSPACE    &kp LG(SPACE)    &kp ENTER  &kp SPACE  &kp RIGHT_SHIFT  &kp LEFT_GUI  &kp DELETE
             >;
 
-            sensor-bindings = <&scrollms LA(TAB) LA(LS(TAB))>;
+            sensor-bindings = <&scrollms 0 0>;
             display-name = "LAYER0";
         };
 
