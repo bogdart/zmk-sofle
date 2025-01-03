@@ -41,6 +41,15 @@
         tap-ms = <30>;
     };
 
+    scrollms: scrollms {
+        compatible = "zmk,behavior-sensor-rotate-var";
+        label = "SCROLLMS";
+        #sensor-binding-cells = <2>;
+        bindings = <&kp>, <&kp>;
+
+        tap-ms = <600>;
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -53,7 +62,7 @@
 &kp LG(LS(S))      &kp LEFT_ALT  &kp TAB  &kp LEFT_SHIFT  &mo 1   &kp BACKSPACE    &kp LG(SPACE)    &kp ENTER  &kp SPACE  &kp RIGHT_SHIFT  &kp LEFT_GUI  &kp DELETE
             >;
 
-            sensor-bindings = <&inc_dec_kp TAB LS(TAB)>;
+            sensor-bindings = <&scrollms LA(TAB) LA(LS(TAB))>;
             display-name = "LAYER0";
         };
 
@@ -63,7 +72,7 @@
 &trans      &trans  &trans  &trans    &trans  &trans    &kp END        &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp INSERT         &trans            &kp PRINTSCREEN       &kp F12
 &trans      &trans  &trans  &trans    &trans  &trans    &kp PAGE_UP    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &trans                &trans
 &trans      &trans  &trans  &trans    &trans  &trans    &kp PAGE_DOWN  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN      &kp GREATER_THAN  &kp NON_US_BACKSLASH  &trans
-&kp K_MUTE  &trans  &trans  &kp CAPS  &trans  &trans    &to 2          &trans                &kp SPACE              &kp CAPS           &trans            &trans
+&kp K_MUTE  &trans  &trans  &kp CAPS  &trans  &mo 2     &to 2          &trans                &kp SPACE              &kp CAPS           &trans            &trans
             >;
 
             display-name = "layer1";
