@@ -123,7 +123,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-caps$$
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '2'
   - {t: '2', h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-space$$
@@ -187,8 +187,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {type: held}
   - $$mdi:mouse-left-click-outline$$
   - KP ENTER
   - KP DOT
