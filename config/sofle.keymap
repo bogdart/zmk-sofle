@@ -51,7 +51,12 @@
         alttab: alttab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(TAB) &sk LEFT_ALT>;
+            bindings
+                = <&macro_press &kp LEFT_ALT>
+                , <&macro_tap &kp TAB>
+                , <&macro_wait_time 500>                
+                , <&macro_release &kp LEFT_ALT>
+                ;            
             label = "ALTTAB";
         };
     };
