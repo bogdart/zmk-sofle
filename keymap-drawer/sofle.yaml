@@ -116,12 +116,12 @@ layers:
   - {t: ']', s: '}'}
   - <
   - '>'
-  - \
+  - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
   - MUTE
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:apple-keyboard-caps$$
+  - $$mdi:apple-keyboard-shift$$
   - {type: held}
   - '2'
   - {t: '2', h: toggle}
