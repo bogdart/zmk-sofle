@@ -4,6 +4,9 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
@@ -42,7 +45,7 @@
         compatible = "zmk,behavior-sensor-rotate-var";
         label = "SCROLLMS";
         #sensor-binding-cells = <2>;
-        bindings = <&alttab>, <&alttab>;
+        bindings = <&alttab>, <&altshifttab>;
 
         tap-ms = <100>;
     };
@@ -62,6 +65,24 @@
                 <&kp LEFT_ALT>;
 
             label = "ALTTAB";
+            wait-ms = <40>;
+            tap-ms = <100>;
+        };
+
+        altshifttab: altshifttab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp LS(TAB)>,
+                <&macro_tap>,
+                <&sk LEFT_ALT>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "ALTSHIFTTAB";
             wait-ms = <40>;
             tap-ms = <100>;
         };
