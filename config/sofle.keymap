@@ -44,7 +44,7 @@
         #sensor-binding-cells = <2>;
         bindings = <&alttab>, <&alttab>;
 
-        tap-ms = <600>;
+        tap-ms = <100>;
     };
 
     macros {
