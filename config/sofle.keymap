@@ -44,7 +44,7 @@
         #sensor-binding-cells = <2>;
         bindings = <&alttab>, <&altshifttab>;
 
-        tap-ms = <20>;
+        tap-ms = <5>;
     };
 
     macros {
@@ -62,7 +62,7 @@
                 <&kp LEFT_ALT>;
 
             label = "ALTTAB";
-            wait-ms = <20>;
+            wait-ms = <5>;
             tap-ms = <100>;
         };
 
@@ -80,7 +80,7 @@
                 <&kp LEFT_ALT>;
 
             label = "ALTSHIFTTAB";
-            wait-ms = <20>;
+            wait-ms = <5>;
             tap-ms = <100>;
         };
     };
