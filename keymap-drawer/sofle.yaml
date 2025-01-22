@@ -54,8 +54,8 @@ layers:
   - {t: /, s: '?'}
   - {t: '`', s: '~'}
   - Gui+Sft+S
-  - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-tab$$
+  - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-shift$$
   - layer1
   - {t: '$$mdi:backspace$$', type: backspace}
