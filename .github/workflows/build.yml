@@ -7,9 +7,9 @@ on:
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@a17266847dcd5e3e202ed7eb559665f22a10b86e
   draw:
-    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
+    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@cd5a29cfe8b86395e5434e39213c38506b0b159f
     permissions:
       contents: write
     with:
