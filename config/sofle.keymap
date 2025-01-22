@@ -35,7 +35,7 @@
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
-        tap-ms = <30>;
+        tap-ms = <5>;
     };
 
     scrollms: scrollms {
@@ -44,7 +44,7 @@
         #sensor-binding-cells = <2>;
         bindings = <&alttab>, <&altshifttab>;
 
-        tap-ms = <5>;
+        tap-ms = <1>;
     };
 
     macros {
@@ -62,7 +62,7 @@
                 <&kp LEFT_ALT>;
 
             label = "ALTTAB";
-            wait-ms = <5>;
+            wait-ms = <1>;
             tap-ms = <100>;
         };
 
@@ -80,7 +80,7 @@
                 <&kp LEFT_ALT>;
 
             label = "ALTSHIFTTAB";
-            wait-ms = <5>;
+            wait-ms = <1>;
             tap-ms = <100>;
         };
     };
@@ -94,7 +94,7 @@
 &kp LEFT_BRACKET   &kp Q         &kp W    &kp E           &kp R   &kp T            &kp DOWN_ARROW   &kp Y      &kp U      &kp I            &kp O         &kp P       &kp EQUAL
 &kp RIGHT_BRACKET  &kp A         &kp S    &kp D           &kp F   &kp G            &kp LEFT_ARROW   &kp H      &kp J      &kp K            &kp L         &kp SEMI    &kp APOS
 &kp LEFT_CONTROL   &kp Z         &kp X    &kp C           &kp V   &kp B            &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA        &kp DOT       &kp FSLH    &kp GRAVE
-&kp LG(LS(S))      &kp LEFT_ALT  &kp TAB  &kp LEFT_SHIFT  &mo 1   &kp BACKSPACE    &kp LG(SPACE)    &kp ENTER  &kp SPACE  &kp RIGHT_SHIFT  &kp LEFT_GUI  &kp DELETE
+&kp LG(LS(S))      &kp TAB  &kp LEFT_ALT  &kp LEFT_SHIFT  &mo 1   &kp BACKSPACE    &kp LG(SPACE)    &kp ENTER  &kp SPACE  &kp RIGHT_SHIFT  &kp LEFT_GUI  &kp DELETE
             >;
 
             sensor-bindings = <&scrollms 0 0>;
