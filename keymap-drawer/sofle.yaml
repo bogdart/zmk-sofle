@@ -56,13 +56,13 @@ layers:
   - Gui+Sft+S
   - $$mdi:keyboard-tab$$
   - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - Gui+$$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:apple-keyboard-shift$$
   - $$mdi:keyboard-space$$
+  - $$mdi:apple-keyboard-shift$$
   - layer1
   - $$mdi:backspace-reverse-outline$$
   layer1:
@@ -121,8 +121,8 @@ layers:
   - MUTE
   - {t: '$$mdi:transfer$$', type: trans}
   - RGUI
-  - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-option$$
   - '2'
   - {t: '2', h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
