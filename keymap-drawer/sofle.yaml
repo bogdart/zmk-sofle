@@ -56,13 +56,13 @@ layers:
   - Gui+Sft+S
   - $$mdi:keyboard-tab$$
   - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - Gui+$$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-shift$$
+  - $$mdi:keyboard-space$$
   - layer1
   - $$mdi:backspace-reverse-outline$$
   layer1:
@@ -120,16 +120,16 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - MUTE
   - {t: '$$mdi:transfer$$', type: trans}
+  - RGUI
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
   - '2'
   - {t: '2', h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-caps$$
-  - {t: RGUI, type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - '2'
   '2':
   - {t: LAYER0, h: toggle}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
@@ -194,4 +194,4 @@ layers:
   - KP DOT
   - KP 0
   - {t: '$$mdi:backspace$$', type: held}
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:backspace-reverse-outline$$', type: held alternate}
