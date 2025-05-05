@@ -47,7 +47,7 @@
 &kp LEFT_BRACKET   &kp Q    &kp W         &kp E           &kp R   &kp T            &kp DOWN_ARROW   &kp Y      &kp U      &kp I            &kp O         &kp P       &kp EQUAL
 &kp RIGHT_BRACKET  &kp A    &kp S         &kp D           &kp F   &kp G            &kp LEFT_ARROW   &kp H      &kp J      &kp K            &kp L         &kp SEMI    &kp APOS
 &kp LEFT_CONTROL   &kp Z    &kp X         &kp C           &kp V   &kp B            &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA        &kp DOT       &kp FSLH    &kp GRAVE
-&kp LG(LS(S))      &kp TAB  &kp LEFT_GUI  &kp LEFT_SHIFT  &kp LEFT_ALT   &kp BACKSPACE    &kp LG(SPACE)    &kp ENTER  &kp SPACE  &kp RIGHT_SHIFT  &mo 1  &kp DELETE
+&kp LG(LS(S))      &kp TAB  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT   &kp BACKSPACE    &kp LG(SPACE)    &kp ENTER  &kp RIGHT_SHIFT  &kp SPACE  &mo 1  &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp TAB LS(TAB)>;
@@ -60,7 +60,7 @@
 &trans      &trans  &trans    &trans          &trans  &trans    &kp END        &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp INSERT         &trans            &kp PRINTSCREEN  &kp F12
 &trans      &trans  &trans    &trans          &trans  &trans    &kp PAGE_UP    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &trans           &trans
 &trans      &trans  &trans    &trans          &trans  &trans    &kp PAGE_DOWN  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LESS_THAN      &kp GREATER_THAN  &kp BACKSLASH    &trans
-&kp K_MUTE  &trans  &kp RALT  &kp LEFT_SHIFT  &trans  &mo 2     &to 2          &trans                &kp SPACE              &kp CAPS           &kp RGUI          &trans
+&kp K_MUTE  &trans  &kp RGUI  &kp RALT  &trans  &mo 2     &to 2          &trans                &kp SPACE              &kp CAPS           &trans          &mo 2
             >;
 
             display-name = "layer1";
